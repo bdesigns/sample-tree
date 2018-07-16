@@ -1,0 +1,31 @@
+/* ----------------------------------------------------------------------------
+= Global Buttons
+----------------------------------------------------------------------------- */
+
+.button{
+    display:block;
+    padding-bottom:4px;
+    @include font-size(18px);
+    text-align:center;
+    line-height:44px;
+    text-decoration:none;
+    border-radius:4px;
+    @include animate(200ms);
+}
+
+
+.b-button{
+    background-color:#00AEEF;
+    color:#fff;
+    &:hover{
+        background-color:#0095cd;
+    }
+}
+
+.gen-button{
+    background-color:#08C177;
+    color:#fff;
+    &:hover{
+        background-color:#0095cd;
+    }
+}
