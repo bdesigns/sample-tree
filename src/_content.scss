@@ -434,6 +434,91 @@
 }
 
 
+.our-brands{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top:68px;
+    padding-bottom:61px;
+    @include media($mw, 1024px){
+        padding-top:210px;
+        padding-bottom:231px;
+    }
+    .lead{
+        margin-bottom:35px;
+        text-align:center;
+        @include animate(200ms);
+        @include media($mw, 660px){
+            max-width:660px;
+            margin-right:auto; 
+            margin-left:auto;
+        }
+    }
+    .brand-list{
+        margin-left:auto;
+        margin-right:auto;
+        @include animate(200ms);
+        @include media($mw, 750px){
+            display:flex;
+            flex-wrap:wrap;
+            justify-content: space-between;
+            max-width:590px;
+            align-items:center;
+        }
+        @include media($mw, 1024px){
+            max-width:960px;
+        }
+    }
+    .items{
+        text-align: center;
+        margin-bottom:50px;
+        @include animate(200ms);
+        @include media($mw, 1024px){
+            &:nth-child(1) img{
+                padding-right:25px;
+                padding-left:25px;
+            }
+            &:nth-child(4) img{
+                padding-left:70px;
+            }
+            &:nth-child(5) img{
+                padding-right:30px;
+                padding-left:30px;
+            }
+            &:nth-child(6) img{
+                padding-right:70px;
+            }
+        }
+        a{
+            display:block;
+            &:hover{
+                img{
+                    opacity:0.7;
+                    transform: skewY(2deg);
+                }
+            }
+        }
+        img{
+            width:250px !important;
+            opacity:1;
+            transform: skewY(0deg);
+            @include animate(200ms);
+        }
+        .name{
+            display:block;
+            @include visuallyhidden;
+        }
+    }
+    .readmore{
+        margin-right:auto;
+        margin-left:auto;
+        @include animate(200ms);
+        @include media($mw, 500px){
+            max-width:350px;
+        }
+    }
+}
+
 .content-scroller{
     display:none;
     position: fixed;

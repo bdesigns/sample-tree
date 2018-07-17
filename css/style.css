@@ -1710,6 +1710,140 @@ footer {
   }
 }
 
+.our-brands {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 68px;
+  padding-bottom: 61px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .our-brands {
+    padding-top: 210px;
+    padding-bottom: 231px;
+  }
+}
+
+.our-brands .lead {
+  margin-bottom: 35px;
+  text-align: center;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+@media only screen and (min-width: 660px) {
+  .our-brands .lead {
+    max-width: 660px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.our-brands .brand-list {
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+@media only screen and (min-width: 750px) {
+  .our-brands .brand-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 590px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .our-brands .brand-list {
+    max-width: 960px;
+  }
+}
+
+.our-brands .items {
+  text-align: center;
+  margin-bottom: 50px;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+@media only screen and (min-width: 1024px) {
+  .our-brands .items:nth-child(1) img {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .our-brands .items:nth-child(4) img {
+    padding-left: 70px;
+  }
+  .our-brands .items:nth-child(5) img {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .our-brands .items:nth-child(6) img {
+    padding-right: 70px;
+  }
+}
+
+.our-brands .items a {
+  display: block;
+}
+
+.our-brands .items a:hover img {
+  opacity: 0.7;
+  -webkit-transform: skewY(2deg);
+  -ms-transform: skewY(2deg);
+  transform: skewY(2deg);
+}
+
+.our-brands .items img {
+  width: 250px !important;
+  opacity: 1;
+  -webkit-transform: skewY(0deg);
+  -ms-transform: skewY(0deg);
+  transform: skewY(0deg);
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+.our-brands .items .name {
+  display: block;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.our-brands .readmore {
+  margin-right: auto;
+  margin-left: auto;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+@media only screen and (min-width: 500px) {
+  .our-brands .readmore {
+    max-width: 350px;
+  }
+}
+
 .content-scroller {
   display: none;
   position: fixed;
