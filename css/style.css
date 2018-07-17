@@ -408,17 +408,22 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.content.container {
+  overflow: hidden;
+}
+
 /*----------------------------------------------------------------------------
 = Blocked in header and footer
 ----------------------------------------------------------------------------- */
 .global-header {
   background-color: #fff;
   height: 61px;
+  overflow: hidden;
 }
 
 @media only screen and (min-width: 991px) {
   .global-header {
-    height: 70px;
+    height: 121px;
     background-color: #101f30;
   }
 }
@@ -542,6 +547,7 @@ body {
   -ms-transform: translateY(-140px);
   transform: translateY(-140px);
   visibility: hidden;
+  overflow: hidden;
   opacity: 0;
   z-index: -2;
   -webkit-transition: all 200ms linear;
@@ -556,12 +562,12 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    width: 100%;
     max-width: 1150px;
     height: 70px;
     background-color: #101f30;
@@ -578,10 +584,11 @@ body {
   }
 }
 
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 1100px) {
   .tablet-desktop {
-    padding-left: 0;
-    padding-right: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }
 
@@ -713,7 +720,7 @@ body {
 .header-search {
   width: 22px;
   height: 22px;
-  background: transparent url("/imgs/search-icon.png") no-repeat 0px 2px;
+  background: transparent url("../imgs/search-icon.png") no-repeat 0px 2px;
   cursor: pointer;
   -webkit-transition: all 200ms linear;
   -moz-transition: all 200ms linear;
@@ -832,6 +839,7 @@ body {
 footer {
   position: relative;
   background-color: #101f30;
+  overflow: hidden;
   z-index: 11;
 }
 
@@ -1236,11 +1244,17 @@ footer {
   .pressroom .press-releases {
     display: grid;
     max-width: 1093px;
-    grid-column-gap: 30px;
+    grid-column-gap: 25px;
     grid-template-columns: 50%  50%;
     grid-template-areas: "main side-one" "main side-two" "main side-three";
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .pressroom .press-releases {
+    grid-column-gap: 30px;
   }
 }
 
@@ -1646,7 +1660,7 @@ footer {
 @media only screen and (min-width: 1090px) {
   .leadership .thumbnail {
     position: absolute;
-    bottom: -200px;
+    bottom: -198px;
     left: 0;
     width: 448px;
     height: 700px;

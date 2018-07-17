@@ -23,6 +23,9 @@ body {
 }
 
 
+.content.container{
+    overflow:hidden;
+}
 /*----------------------------------------------------------------------------
 = Blocked in header and footer
 ----------------------------------------------------------------------------- */
@@ -30,8 +33,9 @@ body {
 .global-header{
     background-color:#fff;
     height:61px;
+    overflow: hidden;
     @include media($mw, 991px){
-        height:70px;
+        height:121px;
         background-color:#101f30;   
     }
 }
@@ -113,14 +117,16 @@ body {
 .tablet-desktop{
     transform:translateY(-140px);
     visibility:hidden;
+    overflow:hidden;
     opacity:0;
     z-index:-2;
     @include animate(200ms);
     @include media($mw, 991px){
         top:-1px;
         display:flex;
-        justify-content:space-between;
+        justify-content:space-around;
         align-items:center;
+        width:100%;
         max-width:1150px; 
         height:70px;
         background-color:#101f30;
@@ -133,9 +139,12 @@ body {
         opacity:1;
         z-index:10;
     }
-    @include media($mw, 1040px){
-        padding-left:0;
-        padding-right:0;
+    // @include media($mw, 1040px){
+    //     padding-left:0;
+    //     padding-right:0;
+    // }
+    @include media($mw, 1100px){
+        justify-content:space-between;
     }
     // over-ride mobile hamburgers
     .slide-panel{
@@ -185,6 +194,7 @@ body {
     justify-content:space-between;
     align-items:center;
     height:100%;
+    
 }
 
 .product-nav{
@@ -233,7 +243,7 @@ body {
 .header-search{
     width:22px;
     height:22px;
-    background:transparent url("/imgs/search-icon.png") no-repeat 0px 2px;
+    background:transparent url("../imgs/search-icon.png") no-repeat 0px 2px;
     cursor:pointer;
     @include animate(200ms);
     &:hover{
@@ -317,6 +327,7 @@ body {
 footer{
     position: relative;;
     background-color:#101f30;
+    overflow: hidden;
     z-index: 11;
 }
 
