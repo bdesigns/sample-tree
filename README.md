@@ -1,2 +1,2 @@
 # sample-tree
-Code samples for possible about landing page
+Code samples for an About landing page
