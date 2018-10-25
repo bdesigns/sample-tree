@@ -1,5 +1,8 @@
 # sample-tree
-Code samples for an About landing page
-    - Single left sidebar nav
-    - Responsive layout
-    - Placeholder header/footer
+
+Code sample for an About landing page.
+- responsive layout
+- left side bullet nav
+- non-functioning header/footer
+   
+
