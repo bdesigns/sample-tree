@@ -1,4 +1,4 @@
-# sample-tree
+# Landing-Page-tree
 
 Code sample for an About landing page.
 - responsive layout
